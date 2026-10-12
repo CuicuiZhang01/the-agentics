@@ -1,6 +1,6 @@
 # Assignment: Agentic Workflow Build Report
 
-**Individual · due [due date] · submit on Canvas**
+**Individual · submit on Canvas**
 
 ## The task
 
