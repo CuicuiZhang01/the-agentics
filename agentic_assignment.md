@@ -87,16 +87,3 @@ How did you check that the output was correct or sensible? State any AI
 assistance you used (including for code) and how you verified it. If you used
 none, say so.
 ```
-
-## Grading
-
-This assignment is **graded for effort**. A complete, honest attempt earns full credit. "Complete" means:
-
-- your link opens,
-- `run1_original` and `run2_changed` are both in the folder and show a real run,
-- you made a genuine attempt at a change of your own, and
-- every section of `REPORT.md` is filled in.
-
-The one exception is an exposed API key, which is an automatic 0 (see **What to submit**).
-
-A change that did not work still counts, as long as you explain what happened and what you learned in Section 3 of your report.
