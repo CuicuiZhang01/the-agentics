@@ -20,7 +20,7 @@ CrewAI → Agents SDK → LangGraph moves from **most abstract to most explicit*
 
 Because you are the only ones running code, **your demos are the single point of failure.** Rehearse them.
 
-1. **Run all three kits live with a real Groq key.** I tested the flows against a simulated Groq endpoint, which verifies the code, the tool and hand-off loops, and the model names sent. I could not make live calls, so real latency and real model behavior are untested.
+1. **Run all three kits live with a real Groq key.** I tested the flows against a simulated Groq endpoint, which verifies the code, the tool and hand-off loops, and the model names sent. It cannot predict every rule Groq enforces: the first live run found a schema error in the Agents SDK hand-offs, now fixed. Live latency and model behavior are still untested, so rehearse everything.
 2. **Rehearse the three live changes** (listed in each segment below). Prepare each one in a scratch copy so you can paste it if typing goes wrong.
 3. **Save backup output:** screenshots or saved terminal text of one good run per kit. If Groq or the Wi-Fi fails mid-recording, you can show these.
 4. **Use a throwaway demo key** and delete it after class. Never open `.env` on screen; show `.env.example` instead. The check scripts and kits do not print the key, but an open `.env` tab will.
@@ -92,9 +92,9 @@ Because you are the only ones running code, **your demos are the single point of
 | :--- | :--- |
 | 0:23 | **Orient.** One sentence: *an agent is instructions + tools + hand-offs; the Runner loops until a final answer.* |
 | 0:25 | `cd agents-sdk-kit`, then `uv run python main.py`. Demo the three prompts from the guide, calling out the `[Agent Name]` on each reply: **Math Tutor**, **Writing Coach**, then **Triage** answering for itself. |
-| 0:30 | **Walk the code:** `@function_tool`, the specialists, `handoffs=[...]`, the `Runner` loop. |
+| 0:30 | **Walk the code:** `@function_tool`, the specialists, the `handoffs` list, the `Runner` loop. Point at `HandoffReason`: hand-offs are tools, and Groq rejects a tool with an empty schema, so each carries a `reason` (it also prints why Triage routed where it did). |
 | 0:34 | **The teachable gotcha:** show the `OpenAIChatCompletionsModel` wrapper and explain why. A bare `"openai/gpt-oss-120b"` string gets its `openai/` prefix stripped, so Groq would receive the wrong model name. *Lesson: with a non-default provider, verify the model name that actually goes over the wire.* |
-| 0:37 | **Live change:** add a third specialist (for example, a Translator with its own `handoff_description`) and add it to Triage's `handoffs`. Ask something that should route to it. |
+| 0:37 | **Live change:** add a third specialist (for example, a Translator with its own `handoff_description`) and add it to Triage's `handoffs` by copying the existing `handoff(...)` line. Ask something that should route to it. |
 
 ---
 

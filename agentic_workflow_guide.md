@@ -141,7 +141,7 @@ The SDK's whole idea fits in one sentence: **an agent is instructions + tools + 
 | :--- | :--- | :--- |
 | **Tool** | `@function_tool` on a plain Python function | Something the model can call. The docstring becomes its description |
 | **Agent** | `Agent(name, instructions, tools, model)` | One role with its own tools |
-| **Hand-off** | `handoffs=[math_tutor, writing_coach]` | Lets Triage pass the conversation to a specialist |
+| **Hand-off** | `handoffs=[handoff(math_tutor, on_handoff=..., input_type=HandoffReason), ...]` | Lets Triage pass the conversation to a specialist, with a short reason |
 | **Runner** | `Runner.run_sync(triage, history)` | Loops: model → tool or hand-off → model... until a final answer |
 
 Two details worth noticing:
@@ -149,11 +149,13 @@ Two details worth noticing:
 - `result.last_agent.name` tells you who actually answered. That is your hand-off trace.
 - `result.to_input_list()` returns the whole conversation so far; feeding it back in is how the agent "remembers".
 
+**The hand-off input (a second gotcha).** A hand-off is really a tool the model calls, and by default it takes no arguments. Groq rejects that empty schema (`'required' present but 'properties' is missing`). The kit gives every hand-off one small input, `reason`, which fixes it and prints why Triage chose each specialist. If you see that error after writing your own hand-off, this is why.
+
 **The model wrapper (a real gotcha).** The code uses `OpenAIChatCompletionsModel(...)` instead of passing a plain model string. If you pass the bare string `"openai/gpt-oss-120b"`, the SDK treats `openai/` as *its own* provider prefix and strips it, so Groq would receive `gpt-oss-120b`, which is not a valid Groq model name. The wrapper sends the name unchanged. Remember this when pointing any framework at a non-default provider: **check what model name actually goes over the wire.**
 
 ### Make it yours (pick one; these are also your options for the assignment)
 
-1. **Add a specialist.** Create a `Translator` agent with a `handoff_description`, and add it to Triage's `handoffs`.
+1. **Add a specialist.** Create a `Translator` agent with a `handoff_description`, and add it to Triage's `handoffs` the same way the others are added: `handoff(translator, on_handoff=show_reason, input_type=HandoffReason)`.
 2. **Add a tool.** Write `reading_time(text: str) -> str` (words ÷ 200) and give it to the Writing Coach.
 3. **Confuse the router.** Ask something that fits two specialists at once. Who wins, and can you fix it by rewriting the `handoff_description`s?
 

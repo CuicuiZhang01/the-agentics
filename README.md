@@ -14,7 +14,8 @@ Three small starter kits for three ways of building agentic workflows: **CrewAI*
 | Follow along live in class (optional, about 10 minutes) | [`pre_class_setup.md`](pre_class_setup.md) |
 | Run everything yourself after watching the class recording | [`agentic_workflow_guide.md`](agentic_workflow_guide.md) |
 | See what to turn in (graded for effort) | [`agentic_assignment.md`](agentic_assignment.md) |
-| See the script we followed in the class demo | [`presenter_run_of_show.md`](presenter_run_of_show.md) |
+| Read what we said and did in the class demo, step by step | [`class_walkthrough.md`](class_walkthrough.md) |
+| See the timeline for the class demo | [`presenter_run_of_show.md`](presenter_run_of_show.md) |
 
 The first three documents are also inside the zip, so you can read them offline.
 
