@@ -1,6 +1,6 @@
 # Assignment: CrewAI Build Report
 
-**Individual · submit a link on Canvas**
+**Individual · due [due date] · submit a link on Canvas**
 
 ## The task
 
@@ -11,31 +11,48 @@ The goal is not a large project. It is to show that you can get an agent framewo
 ## Part 1: Do the work
 
 1. **Set up.** Follow Part 0 of `agentic_workflow_guide.md` for the CrewAI kit, and confirm `check_setup.py` ends with `CrewAI kit OK`.
-2. **Run the unmodified kit once**, with any topic you like:
+2. **Make your submission folder.** Create an empty folder named **`submission`** somewhere easy to find, such as your Documents folder. Everything you hand in goes in this folder, and nothing else.
+3. **Run the unmodified kit once**, with any topic you like:
    ```
    cd crewai-kit
    uv run python main.py "your topic"
    ```
-3. **Save that run.** You need two things from it (details under **How to save your runs**):
-   - the terminal text, saved as **`run1_original.txt`**
-   - a copy of `output/explainer.md`, saved as **`explainer_run1.md`**
+4. **Save that run into your `submission` folder** (details under **How to save your runs**):
+   - the terminal text, as **`run1_original.txt`**
+   - a copy of `output/explainer.md`, as **`explainer_run1.md`**
+
    Do this *before* the next run, because the next run overwrites `explainer.md`.
-4. **Make one change that alters the behavior you can see in the output.** Renaming a variable or rewording a comment does not count. Options:
+5. **Make one change that alters the behavior you can see in the output.** Renaming a variable or rewording a comment does not count. Options:
    - **Change the voice:** rewrite the Writer's backstory for a very different audience (a 10-year-old, a CFO, a skeptical reviewer).
    - **Add a fourth agent:** for example a Fact Checker with its own task, added to the `agents` and `tasks` lists in order.
    - **Change the domain:** rewrite the crew for a topic or kind of work from your own field (for example, a research-to-brief team).
    - **Break it on purpose:** remove an `expected_output` or make two goals contradict, and explain what changed.
    - **Your own idea:** welcome, if it is about the same size. If unsure, ask first.
-5. **Run your changed version** with the **same topic** as before, so you can compare. Save it as **`run2_changed.txt`** and **`explainer_run2.md`**.
-6. **Write `REPORT.md`** (template at the end of this page).
+6. **Run your changed version** with the **same topic** as before, so you can compare. Save it into `submission` as **`run2_changed.txt`** and **`explainer_run2.md`**.
+7. **Copy your changed `main.py`** from `crewai-kit` into `submission`. Copy it; do not move it.
+8. **Write `REPORT.md`** (template at the end of this page) and save it in `submission`.
+
+When you are done, your `submission` folder holds these files, and only these:
+
+```
+submission/
+  REPORT.md
+  main.py
+  run1_original.txt
+  run2_changed.txt
+  explainer_run1.md
+  explainer_run2.md
+```
+
+If you added a package, also copy in `crewai-kit/pyproject.toml`.
 
 ## How to save your runs
 
-**The terminal text** (`run1_original.txt` and `run2_changed.txt`): in the VS Code terminal, right-click and choose **Select All**, then right-click and choose **Copy**. Choose **File → New Text File**, paste, and save it with the file name above. The text must show the command you typed and what came back. This is how we see that you ran it.
+**The terminal text** (`run1_original.txt` and `run2_changed.txt`): in the VS Code terminal, right-click and choose **Select All**, then right-click and choose **Copy**. Choose **File → New Text File**, paste, and save it in your `submission` folder with the file name above. The text must show the command you typed and what came back. This is how we see that you ran it.
 
-**The explainer** (`explainer_run1.md` and `explainer_run2.md`): after each run, open `crewai-kit/output/explainer.md`, choose **File → Save As...**, and save a copy with the new name. Do not move or delete the original `output` folder.
+**The explainer** (`explainer_run1.md` and `explainer_run2.md`): after each run, open `crewai-kit/output/explainer.md`, choose **File → Save As...**, and save a copy in your `submission` folder with the new name. Leave the original `output` folder where it is.
 
-**Check before you save or upload:** make sure no file shows your API key. It should not appear in these outputs, but look.
+**Check before you upload:** open each file and make sure none of them shows your API key. It should not appear in these outputs, but look.
 
 ## Part 2: Submit
 
@@ -44,19 +61,19 @@ You submit a **link to your own GitHub copy** of the class repository. You do no
 You need a free GitHub account. If you do not have one, create one at github.com. If you cannot use GitHub for any reason, email [instructor email] before the due date.
 
 1. **Fork the class repository.** Open [repository link], click **Fork** (top right), then **Create fork**. This makes your own copy, under your own username, that you are allowed to add files to.
-2. **Create your submission folder with your report.** In your fork, click **Add file → Create new file**. In the name box, type `submission/REPORT.md`. Typing the slash creates the folder. Paste in your report, then click **Commit changes**.
-3. **Upload your other files.** Open the new `submission` folder in your fork. Click **Add file → Upload files** and drag in these files only (do not drag in a whole folder):
-   - the file(s) you changed (usually `main.py` from `crewai-kit`),
-   - `run1_original.txt` and `run2_changed.txt`,
-   - `explainer_run1.md` and `explainer_run2.md`,
-   - `pyproject.toml` from `crewai-kit`, only if you added a package.
-   Click **Commit changes**.
-4. **Copy the address of your fork.** It should contain your username, not your instructor's, and it is visible in the browser's address bar.
-5. **Submit on Canvas.** Paste the address into the **Website URL** box on the assignment page, then click **Submit Assignment**.
+2. **Open the upload page in your fork.** Click **Add file → Upload files**.
+3. **Drag your `submission` folder** from File Explorer (Windows) or Finder (Mac) onto the upload box. Drag the **folder itself**, not the files inside it. You should see your files listed with `submission/` in front of each name.
+4. **Click Commit changes.**
+5. **Check your fork.** Open it and click into the `submission` folder. You should see your six files. The address in your browser's address bar should contain your username, not your instructor's.
+6. **Submit on Canvas.** Paste that address into the **Website URL** box on the assignment page, then click **Submit Assignment**.
+
+If dragging the folder does not work in your browser, create the folder on GitHub instead: click **Add file → Create new file**, type `submission/REPORT.md` as the name (typing the slash creates the folder), paste your report, and commit. Then open that folder and use **Add file → Upload files** to drag in the other files.
 
 **Test your link before you submit it.** Open it in a private or incognito window, where you are not signed in. You should see your `submission` folder with your files in it. If you cannot open it there, we cannot either.
 
-**Never upload your `.env` file or any API key**, in any file, pasted output or screenshot. **An exposed API key is an automatic 0.** If a key is ever exposed, delete it at console.groq.com and create a new one right away. Never drag in a whole kit folder either, because the `.venv` folder inside it holds hundreds of megabytes of installed packages and is not something to submit.
+**Never upload your `.env` file or any API key**, in any file, pasted output or screenshot. **An exposed API key is an automatic 0.** If a key is ever exposed, delete it at console.groq.com and create a new one right away.
+
+**Only drag in your `submission` folder.** Never drag in `agentic-starter-kits` or a kit folder such as `crewai-kit`. The kit folders contain a `.venv` folder with hundreds of megabytes of installed packages, and the top folder contains your `.env` file with your key.
 
 ## `REPORT.md` template
 
