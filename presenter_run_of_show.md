@@ -126,8 +126,8 @@ Walk through `agentic_assignment.md` on screen. Say plainly, for the recording:
 
 - It is **one framework, one change, one short report.**
 - The live changes you just made are the model: small, visible, and explained.
-- Show the REPORT.md template and the rubric's five criteria.
-- Remind them: build the zip from a **fresh folder** with only their changed files and `REPORT.md`, so `.env` (their API key) and `.venv` (hundreds of megabytes) stay out.
+- Show the REPORT.md template. Say it is **graded for effort**: a complete, honest attempt earns full credit, and a change that did not work still counts if it is explained. Say the one exception out loud: **an exposed API key is an automatic 0.** Show the two output files they must save, `run1_original` and `run2_changed`; that is how you verify the work.
+- Remind them: **no attachments.** Build a **fresh folder** with only their changed files and `REPORT.md`, share the folder, and submit the link, so `.env` (their API key) and `.venv` (hundreds of megabytes) stay out. Tell them to test the link in a private window.
 - State the due date and how to submit.
 
 ---

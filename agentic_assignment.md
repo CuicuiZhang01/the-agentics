@@ -1,6 +1,6 @@
 # Assignment: Agentic Workflow Build Report
 
-**Individual · submit on Canvas**
+**Individual · due [due date] · submit a link on Canvas**
 
 ## The task
 
@@ -11,34 +11,49 @@ The goal is not a large project. It is to show that you can get an agent framewo
 ## Steps
 
 1. Complete setup (Part 0 of `agentic_workflow_guide.md`) and confirm your chosen kit's `check_setup.py` ends with `... kit OK`.
-2. Run the unmodified kit once and keep the output.
+2. Run the unmodified kit once and save the output as **`run1_original`** (see **What to submit**).
 3. Make **one change that alters the behavior you can see in the output.** Renaming a variable or rewording a comment does not count. Options:
    - **CrewAI:** add a fourth agent with its own task; or rewrite the crew for a different domain (for example, a research-to-brief team for a topic you care about)
    - **Agents SDK:** add a new specialist agent; or add a new tool and give it to an agent
    - **LangGraph:** add a new tool; or add a human-approval pause before tools run; or add a node that checks the answer before finishing
    - **Your own idea:** welcome, if it is about the same size. If unsure, ask first.
-4. Run your changed version and keep the output.
+4. Run your changed version and save the output as **`run2_changed`**.
 5. Write `REPORT.md` (template below).
-6. Submit.
+6. Share your folder and submit the link (see **What to submit**).
 
 ## What to submit
 
-**One zip file**, uploaded to Canvas, containing:
+**A link to a shared folder.** Attachments are not accepted. Put the items below in one folder, share the folder, and paste the link into the **Website URL** box on the Canvas assignment page, then click **Submit Assignment**:
 
 - the file(s) you changed from your chosen kit (for example `main.py`),
 - `REPORT.md`,
-- the terminal output (pasted into the report, or screenshots) from **both** runs.
+- **`run1_original`**: the output of the unmodified kit, and
+- **`run2_changed`**: the output of your changed version.
+
+Save each run as a text file (`run1_original.txt`, `run2_changed.txt`: select the terminal text, copy, and paste into a new file) or as a screenshot (`run1_original.png`, `run2_changed.png`). These two files are how we see that you ran it, so each must show the command you typed and what came back. Make sure no screenshot or text includes your key.
+
+For CrewAI, also include a copy of `output/explainer.md` from each run (rename them `explainer_run1.md` and `explainer_run2.md`).
 
 If you added a package, also include that kit's `pyproject.toml`.
 
-**Build the zip from a new, empty folder, not from `agentic-starter-kits`.** Copy only the files listed above into the new folder, then zip that folder. This keeps two things out of your submission:
+**Build the folder from scratch, not from `agentic-starter-kits`.** Make a new, empty folder and copy only the files listed above into it. This keeps two things out of what you share:
 
 - your **`.env` file**, which lives in the top `agentic-starter-kits` folder and contains your API key, and
-- the **`.venv` folder** inside each kit, which holds hundreds of megabytes of installed packages and is too large to upload.
+- the **`.venv` folder** inside each kit, which holds hundreds of megabytes of installed packages.
 
-**Do not include your `.env` file or any API key.** If a key is ever exposed, delete it at console.groq.com and create a new one.
+**Do not include your `.env` file or any API key**, in any file, pasted output, or screenshot. **An exposed API key is an automatic 0.** If a key is ever exposed, delete it at console.groq.com and create a new one right away.
 
-*Prefer GitHub?* A link to a **public** repository is also accepted. Create the repository from the top-level `agentic-starter-kits` folder so the included `.gitignore` protects your key, and run `git status` before every push to confirm `.env` is not listed. (Git setup is in `02_git_setup.md`.)
+### How to share the folder
+
+Use whichever you already have:
+
+- **Google Drive:** right-click the folder, choose **Share**, set General access to **Anyone with the link**, set the role to **Viewer**, then choose **Copy link**.
+- **OneDrive:** right-click the folder, choose **Share**, pick a setting that lets your instructor open it (such as **Anyone with the link can view**), then choose **Copy link**.
+- **GitHub:** create a **public** repository from the new folder and submit its link. Run `git status` before every push to confirm `.env` is not listed. (Git setup is in `02_git_setup.md`.)
+
+If your account does not allow "anyone with the link", share the folder with [instructor email] instead.
+
+**Test your link before you submit it.** Open it in a private or incognito window, where you are not signed in. If you cannot open it there, we cannot either, and there will be nothing to grade.
 
 ## `REPORT.md` template
 
@@ -73,19 +88,15 @@ assistance you used (including for code) and how you verified it. If you used
 none, say so.
 ```
 
-## Rubric (100 points)
+## Grading
 
-| Criterion | Exemplary | Proficient | Developing | Beginning |
-| :--- | :--- | :--- | :--- | :--- |
-| **1. Kit runs, with evidence** (15) | **14 to 15:** Both runs shown; output clearly belongs to the stated framework | **11 to 13:** Both runs shown, with minor gaps | **6 to 10:** One run missing, or output unclear | **0 to 5:** No evidence it ran |
-| **2. The change** (30) | **27 to 30:** A substantive change that visibly alters behavior, works, and shows original thought | **21 to 26:** A real change that works, but small or close to the class examples | **12 to 20:** Change is cosmetic, partly working, or hard to see in the output | **0 to 11:** No real change |
-| **3. Explains how it works** (20) | **18 to 20:** Accurate, uses the framework's terms correctly, and explains *why* the change produced the result | **14 to 17:** Mostly accurate, some terms vague | **8 to 13:** Describes what the code does without explaining why | **0 to 7:** Missing, or inaccurate |
-| **4. Framework choice** (20) | **18 to 20:** Specific reasons tied to the change; compares a second framework with real detail | **14 to 17:** Reasonable reasons; comparison is general | **8 to 13:** Generic ("it was easier") with little comparison | **0 to 7:** Missing |
-| **5. Verification, AI disclosure, key safety** (15) | **14 to 15:** States how output was checked; AI use disclosed clearly; no secrets in the submission | **11 to 13:** Disclosure present; verification thin | **6 to 10:** Vague disclosure or no verification | **0 to 5:** No disclosure, or an API key is exposed in the submission |
+This assignment is **graded for effort**. A complete, honest attempt earns full credit. "Complete" means:
 
-**Notes for graders**
+- your link opens,
+- `run1_original` and `run2_changed` are both in the folder and show a real run,
+- you made a genuine attempt at a change of your own, and
+- every section of `REPORT.md` is filled in.
 
-- An exposed API key caps criterion 5 at the Beginning band regardless of the rest. Tell the student to delete and replace the key.
-- Output varies run to run. Grade whether the output reflects the change, not whether it matches the guide.
-- A change that failed but is honestly diagnosed in Section 3 can still earn most of criterion 3 and criterion 5.
-- The rubric totals 100, so it converts to any Canvas point value by simple scaling.
+The one exception is an exposed API key, which is an automatic 0 (see **What to submit**).
+
+A change that did not work still counts, as long as you explain what happened and what you learned in Section 3 of your report.
