@@ -1,6 +1,6 @@
 # Assignment: CrewAI Build Report
 
-**Individual · due [due date] · submit a link on Canvas**
+**Individual · submit a link on Canvas**
 
 ## The task
 
