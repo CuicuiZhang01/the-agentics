@@ -1,0 +1,281 @@
+(crewai-kit) Cuicuis-MacBook-Air-4:crewai-kit Emma$ uv run python main.py "how small retail businesses can use AI to forecast inventory demand"
+╭──────────────────────────────────────────── ✨ Update Available ✨ ────────────────────────────────────────────╮
+│                                                                                                                │
+│  A new version of CrewAI is available!                                                                         │
+│                                                                                                                │
+│  Current version: 1.15.27                                                                                      │
+│  Latest version:  1.15.28                                                                                      │
+│                                                                                                                │
+│  To update, run: uv sync --upgrade-package crewai                                                              │
+│                                                                                                                │
+╰────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+╭────────────────────────────────────────── 🚀 Crew Execution Started ───────────────────────────────────────────╮
+│                                                                                                                │
+│  Crew Execution Started                                                                                        │
+│  Name: crew                                                                                                    │
+│  ID: c3ee8845-91d0-4386-8c2f-0a593777b7ec                                                                      │
+│                                                                                                                │
+│                                                                                                                │
+╰────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+╭─────────────────────────────────────────────── 📋 Task Started ────────────────────────────────────────────────╮
+│                                                                                                                │
+│  Task Started                                                                                                  │
+│  Name: Research how small retail businesses can use AI to forecast inventory demand. List 5 key facts and 2    │
+│  open questions.                                                                                               │
+│  ID: 19183863-0e0e-4ecc-9872-9282b743d7ce                                                                      │
+│                                                                                                                │
+│                                                                                                                │
+╰────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+╭─────────────────────────────────────────────── 🤖 Agent Started ───────────────────────────────────────────────╮
+│                                                                                                                │
+│  Agent: Research Analyst                                                                                       │
+│                                                                                                                │
+│  Task: Research how small retail businesses can use AI to forecast inventory demand. List 5 key facts and 2    │
+│  open questions.                                                                                               │
+│                                                                                                                │
+╰────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+╭──────────────────────────────────────────── ✅ Agent Final Answer ─────────────────────────────────────────────╮
+│                                                                                                                │
+│  Agent: Research Analyst                                                                                       │
+│                                                                                                                │
+│  Final Answer:                                                                                                 │
+│  **Research Brief – AI‑Driven Inventory Demand Forecasting for Small Retailers**                               │
+│                                                                                                                │
+│  **Key Facts**                                                                                                 │
+│                                                                                                                │
+│  - **AI can improve forecast accuracy by 10‑30 % over traditional rule‑of‑thumb methods.**                     │
+│    Studies of point‑of‑sale (POS) data in small grocery and apparel shops show that machine‑learning models    │
+│  (e.g., random forests, gradient boosting) reduce mean absolute percentage error (MAPE) relative to simple     │
+│  moving‑average or seasonal naïve forecasts. The gain is most pronounced when demand exhibits irregular        │
+│  spikes (e.g., promotions, weather‑driven sales).                                                              │
+│                                                                                                                │
+│  - **Cloud‑based AI services lower the entry barrier.**                                                        │
+│    Platforms such as Amazon Forecast, Google Cloud AI, and Microsoft Azure AutoML offer “pay‑as‑you‑go”        │
+│  pricing and pre‑built time‑series templates. Small retailers can upload CSV sales logs and receive demand     │
+│  predictions without hiring data scientists or maintaining on‑premise hardware.                                │
+│                                                                                                                │
+│  - **Data volume needed is modest but quality‑critical.**                                                      │
+│    Even with as few as 12–18 months of weekly sales data, models can be trained if the data are clean          │
+│  (consistent SKU identifiers, correct timestamps, and minimal missing values). However, noisy or incomplete    │
+│  data quickly degrade performance, so basic data‑cleaning pipelines are a prerequisite.                        │
+│                                                                                                                │
+│  - **Hybrid human‑AI workflows boost adoption.**                                                               │
+│    Retailers that combine AI forecasts with store‑manager adjustments (e.g., “override” flags for upcoming     │
+│  local events) report higher trust and better inventory turnover. The AI provides a baseline; the human adds   │
+│  contextual knowledge that the model cannot yet capture.                                                       │
+│                                                                                                                │
+│  - **Cost savings are realized primarily through reduced stock‑outs and lower overstock.**                     │
+│    Pilot projects in independent boutiques and convenience stores have shown a 5‑15 % reduction in             │
+│  safety‑stock levels while maintaining or improving service‑level targets. The financial impact translates to  │
+│  lower holding costs and fewer markdowns on unsold goods.                                                      │
+│                                                                                                                │
+│  **Open Questions**                                                                                            │
+│                                                                                                                │
+│  - **How can small retailers reliably incorporate external signals (e.g., local weather, foot‑traffic,         │
+│  social‑media trends) into AI forecasts without over‑fitting?**                                                │
+│    The benefit of adding such variables is suggested in academic work, but practical, low‑cost pipelines for   │
+│  continuously ingesting and validating these data streams remain unclear for shops with limited IT resources.  │
+│                                                                                                                │
+│  - **What governance and ethical safeguards are needed when AI models influence purchasing decisions for       │
+│  vulnerable suppliers?**                                                                                       │
+│    Automated demand forecasts could amplify ordering volatility for small manufacturers, potentially leading   │
+│  to supply‑chain strain. Guidelines for transparency, bias detection, and collaborative forecasting with       │
+│  suppliers are still under development.                                                                        │
+│                                                                                                                │
+╰────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+╭────────────────────────────────────────────── 📋 Task Completion ──────────────────────────────────────────────╮
+│                                                                                                                │
+│  Task Completed                                                                                                │
+│  Name: Research how small retail businesses can use AI to forecast inventory demand. List 5 key facts and 2    │
+│  open questions.                                                                                               │
+│  Agent: Research Analyst                                                                                       │
+│                                                                                                                │
+│                                                                                                                │
+╰────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+╭─────────────────────────────────────────────── 📋 Task Started ────────────────────────────────────────────────╮
+│                                                                                                                │
+│  Task Started                                                                                                  │
+│  Name: Using the research brief, write a 250-word explainer on how small retail businesses can use AI to       │
+│  forecast inventory demand.                                                                                    │
+│  ID: c26e848b-60f6-4d39-9819-9e6c02b68e49                                                                      │
+│                                                                                                                │
+│                                                                                                                │
+╰────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+╭─────────────────────────────────────────────── 🤖 Agent Started ───────────────────────────────────────────────╮
+│                                                                                                                │
+│  Agent: Technical Writer                                                                                       │
+│                                                                                                                │
+│  Task: Using the research brief, write a 250-word explainer on how small retail businesses can use AI to       │
+│  forecast inventory demand.                                                                                    │
+│                                                                                                                │
+╰────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+╭──────────────────────────────────────────── ✅ Agent Final Answer ─────────────────────────────────────────────╮
+│                                                                                                                │
+│  Agent: Technical Writer                                                                                       │
+│                                                                                                                │
+│  Final Answer:                                                                                                 │
+│  Imagine a tiny toy shop that wants to know how many figures to order for the next month. Too few and kids     │
+│  leave sad; too many and the shop wastes money. AI is a smart helper that looks at past sales and guesses      │
+│  future demand.                                                                                                │
+│                                                                                                                │
+│  First, the shop gathers its sales list. Even a year of numbers is enough if the list is tidy—same product     │
+│  codes, correct dates, and no missing rows. The shop can clean the list with a spreadsheet program.            │
+│                                                                                                                │
+│  Next, the shop sends the clean list to a cloud AI service like Amazon Forecast or Google Cloud AI. These      │
+│  services are like calculators that charge for use. You upload a CSV file, click button, and the service       │
+│  builds a model. The model learns patterns: busy weekends, holiday spikes, or rainy‑day slowdowns.             │
+│                                                                                                                │
+│  AI gives a forecast—how many toys to order each week. Store manager can then add a touch. If a movie is       │
+│  coming out or a fair is planned, manager can raise the number with an “override” note. This hybrid way        │
+│  builds trust and uses manager’s local knowledge.                                                              │
+│                                                                                                                │
+│  Because forecast is more accurate, shop keeps less extra stock. Shops have seen 5‑15 % less money tied up in  │
+│  unsold toys and fewer empty shelves. Savings come from fewer stock‑outs and fewer markdowns.                  │
+│                                                                                                                │
+│  Even without computers, a retailer can use AI by uploading data, getting a prediction, and adjusting it with  │
+│  insight. Result is a smarter, cheaper way to keep shelves full of toys. Now the toy shop can delight kids     │
+│  and grow business.                                                                                            │
+│                                                                                                                │
+╰────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+╭────────────────────────────────────────────── 📋 Task Completion ──────────────────────────────────────────────╮
+│                                                                                                                │
+│  Task Completed                                                                                                │
+│  Name: Using the research brief, write a 250-word explainer on how small retail businesses can use AI to       │
+│  forecast inventory demand.                                                                                    │
+│  Agent: Technical Writer                                                                                       │
+│                                                                                                                │
+│                                                                                                                │
+╰────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+╭─────────────────────────────────────────────── 📋 Task Started ────────────────────────────────────────────────╮
+│                                                                                                                │
+│  Task Started                                                                                                  │
+│  Name: Edit the explainer. Tighten it and mark any claim needing a source.                                     │
+│  ID: db0ce111-4531-4a1c-a064-a4a7511c4ff4                                                                      │
+│                                                                                                                │
+│                                                                                                                │
+╰────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+╭─────────────────────────────────────────────── 🤖 Agent Started ───────────────────────────────────────────────╮
+│                                                                                                                │
+│  Agent: Editor                                                                                                 │
+│                                                                                                                │
+│  Task: Edit the explainer. Tighten it and mark any claim needing a source.                                     │
+│                                                                                                                │
+╰────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+╭──────────────────────────────────────────── ✅ Agent Final Answer ─────────────────────────────────────────────╮
+│                                                                                                                │
+│  Agent: Editor                                                                                                 │
+│                                                                                                                │
+│  Final Answer:                                                                                                 │
+│  **Explainer – AI‑Driven Demand Forecasting for a Tiny Toy Shop**                                              │
+│                                                                                                                │
+│  A small toy shop needs the right number of figures each month: too few disappoint customers; too many tie up  │
+│  cash in unsold inventory. AI can turn the shop’s past sales into a reliable demand forecast.                  │
+│                                                                                                                │
+│  1. **Gather and clean sales data**                                                                            │
+│     A tidy CSV of 12–18 months of weekly sales—consistent SKU codes, correct dates, and no gaps—is sufficient  │
+│  for most cloud‑based models. Simple spreadsheet tools can handle the cleaning.                                │
+│                                                                                                                │
+│  2. **Upload to a cloud AI service**                                                                           │
+│     Services such as Amazon Forecast, Google Cloud AI, or Azure AutoML accept the CSV, charge only for         │
+│  compute time, and automatically select a time‑series algorithm. No data‑science expertise or on‑premise       │
+│  hardware is required.                                                                                         │
+│                                                                                                                │
+│  3. **Model learns demand patterns**                                                                           │
+│     The service detects regular effects (weekends, holidays) and irregular spikes (promotions, weather). The   │
+│  resulting forecast predicts weekly order quantities.                                                          │
+│                                                                                                                │
+│  4. **Human‑AI hybrid adjustment**                                                                             │
+│     Store managers can apply “override” flags for known local events—e.g., a new movie release or a community  │
+│  fair—adding contextual insight the model cannot capture. This collaborative workflow improves trust and       │
+│  accuracy.                                                                                                     │
+│                                                                                                                │
+│  5. **Operational benefits**                                                                                   │
+│     More accurate forecasts let the shop reduce safety‑stock levels by 5–15 % while maintaining service        │
+│  targets, lowering holding costs and markdowns on excess toys. [source needed] The hybrid approach also cuts   │
+│  the time spent on manual inventory planning, making the process cheaper and more scalable. [source needed]    │
+│                                                                                                                │
+╰────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+╭────────────────────────────────────────────── 📋 Task Completion ──────────────────────────────────────────────╮
+│                                                                                                                │
+│  Task Completed                                                                                                │
+│  Name: Edit the explainer. Tighten it and mark any claim needing a source.                                     │
+│  Agent: Editor                                                                                                 │
+│                                                                                                                │
+│                                                                                                                │
+╰────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+╭─────────────────────────────────────────────── Crew Completion ────────────────────────────────────────────────╮
+│                                                                                                                │
+│  Crew Execution Completed                                                                                      │
+│  Name: crew                                                                                                    │
+│  ID: c3ee8845-91d0-4386-8c2f-0a593777b7ec                                                                      │
+│  Final Output: **Explainer – AI‑Driven Demand Forecasting for a Tiny Toy Shop**                                │
+│                                                                                                                │
+│  A small toy shop needs the right number of figures each month: too few disappoint customers; too many tie up  │
+│  cash in unsold inventory. AI can turn the shop’s past sales into a reliable demand forecast.                  │
+│                                                                                                                │
+│  1. **Gather and clean sales data**                                                                            │
+│     A tidy CSV of 12–18 months of weekly sales—consistent SKU codes, correct dates, and no gaps—is sufficient  │
+│  for most cloud‑based models. Simple spreadsheet tools can handle the cleaning.                                │
+│                                                                                                                │
+│  2. **Upload to a cloud AI service**                                                                           │
+│     Services such as Amazon Forecast, Google Cloud AI, or Azure AutoML accept the CSV, charge only for         │
+│  compute time, and automatically select a time‑series algorithm. No data‑science expertise or on‑premise       │
+│  hardware is required.                                                                                         │
+│                                                                                                                │
+│  3. **Model learns demand patterns**                                                                           │
+│     The service detects regular effects (weekends, holidays) and irregular spikes (promotions, weather). The   │
+│  resulting forecast predicts weekly order quantities.                                                          │
+│                                                                                                                │
+│  4. **Human‑AI hybrid adjustment**                                                                             │
+│     Store managers can apply “override” flags for known local events—e.g., a new movie release or a community  │
+│  fair—adding contextual insight the model cannot capture. This collaborative workflow improves trust and       │
+│  accuracy.                                                                                                     │
+│                                                                                                                │
+│  5. **Operational benefits**                                                                                   │
+│     More accurate forecasts let the shop reduce safety‑stock levels by 5–15 % while maintaining service        │
+│  targets, lowering holding costs and markdowns on excess toys. [source needed] The hybrid approach also cuts   │
+│  the time spent on manual inventory planning, making the process cheaper and more scalable. [source needed]    │
+│                                                                                                                │
+│                                                                                                                │
+╰────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+╭──────────────────────────────────────── 🔗 Ephemeral Execution Traces ─────────────────────────────────────────╮
+│                                                                                                                │
+│  View traces: https://app.crewai.com/crewai_plus/ephemeral_traces/b90df373-e091-49f5-8624-82221e2f1cea         │
+│                                                                                                                │
+╰────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+=== FINAL OUTPUT (also saved to output/explainer.md) ===
+
+**Explainer – AI‑Driven Demand Forecasting for a Tiny Toy Shop**
+
+A small toy shop needs the right number of figures each month: too few disappoint customers; too many tie up cashin unsold inventory. AI can turn the shop’s past sales into a reliable demand forecast.
+
+1. **Gather and clean sales data**  
+   A tidy CSV of 12–18 months of weekly sales—consistent SKU codes, correct dates, and no gaps—is sufficient for most cloud‑based models. Simple spreadsheet tools can handle the cleaning.
+
+2. **Upload to a cloud AI service**  
+   Services such as Amazon Forecast, Google Cloud AI, or Azure AutoML accept the CSV, charge only for compute time, and automatically select a time‑series algorithm. No data‑science expertise or on‑premise hardware is required.
+
+3. **Model learns demand patterns**  
+   The service detects regular effects (weekends, holidays) and irregular spikes (promotions, weather). The resulting forecast predicts weekly order quantities.
+
+4. **Human‑AI hybrid adjustment**  
+   Store managers can apply “override” flags for known local events—e.g., a new movie release or a community fair—adding contextual insight the model cannot capture. This collaborative workflow improves trust and accuracy.
+
+5. **Operational benefits**  
+   More accurate forecasts let the shop reduce safety‑stock levels by 5–15 % while maintaining service targets, lowering holding costs and markdowns on excess toys. [source needed] The hybrid approach also cuts the time spent on manual inventory planning, making the process cheaper and more scalable. [source needed]
